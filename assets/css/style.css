@@ -52,6 +52,7 @@ nav {
 }
 main {
 }
+
 .container-main {
   display: flex;
   background-color: #ffe017;
@@ -99,6 +100,9 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  justify-content: space-between;
+
+  align-items: space-between;
 }
 .title-section {
   width: 50px;
@@ -139,31 +143,55 @@ section div h1 {
   align-items: center;
   margin-bottom: 8px;
 }
-.icons-img {
+.icons-img,
+.heads {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 8px;
 }
-.icons h3 {
+.icons h3,
+.title-intestation {
   font-size: 0.9em;
   color: #191919;
   margin: 0;
   font-family: "Spectral", serif;
   font-weight: bold;
 }
-.navigation-section > div > div > div:last-child h1 {
+.navigation-section > div > div > div:last-child h1,
+.title-intestation {
   font-size: 1.2em;
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: bolder;
+  color: #191919;
 }
-.navigation-section > div > div > div:last-child h3 {
+.navigation-section,
+.title-article > div > div > div:last-child h3,
+.title-light {
   font-size: 0.8em;
   color: #999999;
   margin: 0;
 }
-aside {
-  width: 300px;
-  flex-shrink: 0;
+.text-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.img-card {
+  width: 120;
+  height: 140px;
+}
+article {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.button-art {
+  border-radius: 50px;
+  border: none;
+  color: #191919;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
 }
