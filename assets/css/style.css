@@ -7,7 +7,6 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  width: 1200px;
 }
 h1,
 h2,
@@ -18,21 +17,24 @@ h6 {
   margin-top: 0;
 }
 
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
 header {
   position: sticky;
   top: 0;
   z-index: 3;
+  background-color: #ffe017;
+  border-bottom: 1px solid #191919;
 }
 nav {
-  background-color: #ffe017;
   display: flex;
   font-family: "Spectral", serif;
-  padding-left: 100px;
-  padding-right: 100px;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #191919;
 }
 .navigation-bar {
   background-color: #ffe017;
@@ -59,15 +61,16 @@ nav {
 main {
 }
 
-.container-main {
-  display: flex;
+.hero {
   background-color: #ffe017;
-  padding-left: 100px;
-  flex-direction: row;
-  gap: 410px;
-  align-items: center;
   font-family: "Spectral", serif;
   border-bottom: 1px solid #191919;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .shedule-stay {
   display: flex;
