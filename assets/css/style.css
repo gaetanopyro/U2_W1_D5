@@ -17,6 +17,12 @@ h5,
 h6 {
   margin-top: 0;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 nav {
   background-color: #ffe017;
   display: flex;
@@ -87,7 +93,6 @@ main div button {
   background-color: #191919;
   color: white;
   padding: 2px;
-
   width: 150px;
   height: 20px;
   font-family: "Roboto", sans-serif;
@@ -101,6 +106,7 @@ section {
   gap: 20px;
   padding: 20px;
   justify-content: space-between;
+  text-align: center;
 
   align-items: space-between;
 }
@@ -181,12 +187,33 @@ section div h1 {
 .img-card {
   width: 120;
   height: 140px;
+  display: flex;
+}
+.img-article {
+  display: flex;
+  flex-direction: row;
 }
 article {
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container-card {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .button-art {
   border-radius: 50px;
