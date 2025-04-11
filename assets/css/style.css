@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  width: 1200px;
 }
 h1,
 h2,
@@ -56,7 +57,7 @@ main {
   background-color: #ffe017;
   padding-left: 100px;
   flex-direction: row;
-  gap: 570px;
+  gap: 410px;
   align-items: center;
   font-family: "Spectral", serif;
   border-bottom: 1px solid #191919;
@@ -89,4 +90,80 @@ main div button {
   width: 150px;
   height: 20px;
   font-family: "Roboto", sans-serif;
+}
+section {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.title-section {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.h1-section {
+  font-size: 10px;
+}
+section div h1 {
+  font-size: 15px;
+}
+.navigation-section {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 90%;
+}
+.navigation-section > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.titleT {
+  margin-right: 16px;
+}
+.number {
+  font-size: 2em;
+  color: #ccccccf8;
+  margin: 0;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icons-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.icons h3 {
+  font-size: 0.9em;
+  color: #191919;
+  margin: 0;
+  font-family: "Spectral", serif;
+  font-weight: bold;
+}
+.navigation-section > div > div > div:last-child h1 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: bolder;
+}
+.navigation-section > div > div > div:last-child h3 {
+  font-size: 0.8em;
+  color: #999999;
+  margin: 0;
+}
+aside {
+  width: 300px;
+  flex-shrink: 0;
 }
